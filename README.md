@@ -22,10 +22,12 @@ Instead, the *CU<sub>s<sub>* operator can be manually installed as stated in the
 2. Extract this file to a folder, e.g., `grover_controlled_diffuser`.
 3. Use the `terminal` (or the `Command Prompt`) to `cd` to the `grover_controlled_diffuser` folder.
 4. Install the `setup.py` file using the following command:
-    ```bash
+
+   ```bash
     python setup.py install
     ```
     Or, using this command:
+
     ```bash
     python3 -m pip install -e setup.py
     ```
