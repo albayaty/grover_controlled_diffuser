@@ -4,17 +4,17 @@
 
 def CUs(quantum_circuit, inputs, output, barriers=False):
     """
-    This function creates our innovative Grover controlled-diffuser (CUs),
-    which is the standard Grover diffuser (Us) of Grover's algorithm that
-    is controlled by the output qubit of a Boolean oracle. The CUs operator is 
-    well-designed to search for all solutions for Boolean oracles only, where
-    the standard Us operator fails to search for all solutions!
+    This function constructs Grover controlled-diffuser (CUs), which is the 
+    standard Grover diffuser (Us) of Grover's algorithm that is controlled 
+    by the output qubit of a Boolean oracle. The CUs operator is well-designed
+    to search for all solutions for Boolean oracles only, where the standard 
+    Us operator fails to search for all solutions!
     
     Parameters
     ----------
     quantum_circuit: the quantum circuit of Grover's algorithm,
     inputs: the list of input qubits' indices of a Boolean oracle,
-    output: the index of functional qubit (fqubit) of a Boolean oracle, and
+    output: the index of output qubit of a Boolean oracle, and
     barriers: draw barriers (separators) around the CUs operator, its default value is False.
     
     Returns
