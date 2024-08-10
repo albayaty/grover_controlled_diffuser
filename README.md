@@ -2,19 +2,19 @@
 
 ---
 
-The Grover controlled-diffuser (*CU~s~*) is a quantum diffusion operator for Grover’s algorithm that searches for all solutions for Boolean oracles only, since the standard Grover diffuser (*U~s~*) fails to find correct solutions for Boolean oracles in some logical structures! The *CU~s~* operator relies on the states of the output qubit (as the reflection of Boolean decisions from a Boolean oracle), without relying on the phase kickback. Thereby, the *CU~s~* operator successfully searches for all solutions for Boolean oracles regardless of their logical structures, e.g., POS, SOP, DSOP, ESOP, ANF (Reed-Muller), XOR SAT (CNF-XOR SAT and DNF-XOR SAT), just to name a few. Therefore, the *CU~s~* operator can replace the standard *U~s~* operator for Grover’s algorithm of Boolean oracles representing practical applications in the topics of digital synthesizers, robotics, computer vision, machine learning, etc., in the quantum domain.
+The Grover controlled-diffuser (*CU<sub>s<sub>*) is a quantum diffusion operator for Grover’s algorithm that searches for all solutions for Boolean oracles only, since the standard Grover diffuser (*U<sub>s<sub>*) fails to find correct solutions for Boolean oracles in some logical structures! The *CU<sub>s<sub>* operator relies on the states of the output qubit (as the reflection of Boolean decisions from a Boolean oracle), without relying on the phase kickback. Thereby, the *CU<sub>s<sub>* operator successfully searches for all solutions for Boolean oracles regardless of their logical structures, e.g., POS, SOP, DSOP, ESOP, ANF (Reed-Muller), XOR SAT (CNF-XOR SAT and DNF-XOR SAT), just to name a few. Therefore, the *CU<sub>s<sub>* operator can replace the standard *U<sub>s<sub>* operator for Grover’s algorithm of Boolean oracles representing practical applications in the topics of digital synthesizers, robotics, computer vision, machine learning, etc., in the quantum domain.
 
 For more information, please check our paper entitled **"A concept of controlling Grover diffusion operator: A new approach to solve arbitrary Boolean-based problems"**, available at https://doi.org/10.21203/rs.3.rs-2997276/v1
 
 ## Installation
 
-Install the latest version of *CU~s~* operator using the following `pip` command:
+Install the latest version of *CU<sub>s<sub>* operator using the following `pip` command:
 
 ```bash
 pip install git+https://github.com/albayaty/grover_controlled_diffuser@master
 ```
 
-Instead, the *CU~s~* operator can be manually installed as stated in the following steps:
+Instead, the *CU<sub>s<sub>* operator can be manually installed as stated in the following steps:
 
 1. Download this repo to your computer, as a ZIP file.
 2. Extract this file to a folder, e.g., `grover_controlled_diffuser`.
@@ -38,7 +38,7 @@ First of all, please be sure that the following prerequisite packages have been 
 - qiskit.visualization (plotting histograms, distributions, etc.).
 - matplotlib (drawing quantum circuits).
 
-Next, the callable function of the *CU~s~* operator is expressed as follows.
+Next, the callable function of the *CU<sub>s<sub>* operator is expressed as follows.
 
 ```python
 CUs(quantum_circuit, inputs, output, barriers=False)
@@ -48,9 +48,9 @@ Where,
 `quantum_circuit`: the quantum circuit of Grover's algorithm,
 `inputs`: the list of input qubits' indices of a Boolean oracle,
 `output`: the index of output qubit of a Boolean oracle, and
-`barriers`: draw barriers (separators) around the *CU~s~* operator.
+`barriers`: draw barriers (separators) around the *CU<sub>s<sub>* operator.
     
-And, the `CUs` function returns the quantum circuit of Grover's algorithm with the *CU~s~* operator.
+And, the `CUs` function returns the quantum circuit of Grover's algorithm with the *CU<sub>s<sub>* operator.
 
 ## Examples
 
@@ -63,9 +63,9 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 ```
 
-Then, let's constrcut and use the *CU~s~* operator in different scenarios:
+Then, let's constrcut and use the *CU<sub>s<sub>* operator in different scenarios:
 
-1. The *CU~s~* operator (2 inputs and 1 output) surrounded by barriers:
+1. The *CU<sub>s<sub>* operator (2 inputs and 1 output) surrounded by barriers:
     ```python
     inputs = [0,1]
     output = 2
@@ -77,7 +77,7 @@ Then, let's constrcut and use the *CU~s~* operator in different scenarios:
     ```
     ![figure1](/images/figure1)
 
-2. Construct Grover's algorithm for a 4-bit Toffoli gate (as a Boolean oracle) using the *CU~s~* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions:
+2. Construct Grover's algorithm for a 4-bit Toffoli gate (as a Boolean oracle) using the *CU<sub>s<sub>* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions:
     ```python
     inputs = [0,1,2]
     output = 3
@@ -98,7 +98,7 @@ Then, let's constrcut and use the *CU~s~* operator in different scenarios:
     ![figure2a](/images/figure2a)
     ![figure2b](/images/figure2b)
 
-3. Construct Grover's algorithm for an arbitrary Boolean oracle in POS structure as ((a ? b ? ¬c) ? (¬a ? c) ? (¬b ? c)) using the *CU~s~* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions. **Note that such a Boolean oracle in POS structure is not solvable using the standard Grover diffuser (*U~s~*)!**
+3. Construct Grover's algorithm for an arbitrary Boolean oracle in POS structure as ((a ? b ? ¬c) ? (¬a ? c) ? (¬b ? c)) using the *CU<sub>s<sub>* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions. **Note that such a Boolean oracle in POS structure is not solvable using the standard Grover diffuser (*U<sub>s<sub>*)!**
     ```python
     inputs = [0,1,2]
     ancillae = [3,4,5]
@@ -140,7 +140,7 @@ Then, let's constrcut and use the *CU~s~* operator in different scenarios:
 
 ## Reference
 
-In case you are utilizing our Grover controlled-diffuser (*CU~s~*) in your research work, we would be thankful if you referred to it by citing our publication:
+In case you are utilizing our Grover controlled-diffuser (*CU<sub>s<sub>*) in your research work, we would be thankful if you referred to it by citing our publication:
 
 A. Al-Bayaty and M. Perkowski, "A concept of controlling Grover diffusion operator: A new approach to solve arbitrary Boolean-based problems," 2023, [Online]. Available: https://doi.org/10.21203/rs.3.rs-2997276/v1
 
