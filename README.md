@@ -1,4 +1,4 @@
-# Grover controlled-diffuser (*CU~s~*)
+# Grover controlled-diffuser (*CU_s_*)
 
 ---
 
