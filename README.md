@@ -6,15 +6,15 @@ For more information, please check our paper entitled **"A concept of controllin
 
 ## Installation
 
-Install the latest version of *CU<sub>s<sub>* operator using the following `pip` command:
+Install the latest version of *CU<sub>s<sub>* operator using the `pip` command:
 
 ```bash
-pip install git+https://github.com/albayaty/grover_controlled_diffuser@master
+pip install git+https://github.com/albayaty/grover_controlled_diffuser@main
 ```
 
 Instead, the *CU<sub>s<sub>* operator can be manually installed as stated in the following steps:
 
-1. Download this repo to your computer, as a ZIP file.
+1. Download this repository to your computer, as a ZIP file.
 2. Extract this file to a folder, e.g., `grover_controlled_diffuser`.
 3. Use the `terminal` (or the `Command Prompt`) to `cd` to the `grover_controlled_diffuser` folder.
 4. Install the `setup.py` file using the following command:
@@ -30,7 +30,7 @@ Instead, the *CU<sub>s<sub>* operator can be manually installed as stated in the
 
 First of all, please be sure that the following prerequisite packages have been installed:
 
-- qiskit = 1.0.
+- qiskit >= 1.0.
 - qiskit\_aer (simulating quantum circuits locally).
 - qiskit\_ibm\_runtime (transpiling and executing quantum circuits on IBM quantum computers).
 - qiskit.visualization (plotting histograms, distributions, etc.).
@@ -42,13 +42,17 @@ Next, the callable function of the *CU<sub>s<sub>* operator is expressed as foll
 CUs(quantum_circuit, inputs, output, barriers=False)
 ```
 
-Where, 
+Where,
+
 `quantum_circuit`: the quantum circuit of Grover's algorithm,
+
 `inputs`: the list of input qubits' indices of a Boolean oracle,
+
 `output`: the index of output qubit of a Boolean oracle, and
+
 `barriers`: draw barriers (separators) around the *CU<sub>s<sub>* operator.
     
-And, the `CUs` function returns the quantum circuit of Grover's algorithm with the *CU<sub>s<sub>* operator.
+Finally, the `CUs` function returns the quantum circuit of Grover's algorithm with the constructed *CU<sub>s<sub>* operator. Note that this function does not add the measurement gates.
 
 ## Examples
 
@@ -61,7 +65,7 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 ```
 
-Then, let's constrcut and use the *CU<sub>s<sub>* operator in different scenarios:
+Then, let's construct and use the *CU<sub>s<sub>* operator in different scenarios as follows.
 
 1. The *CU<sub>s<sub>* operator (2 inputs and 1 output) surrounded by barriers:
     ```python
@@ -70,7 +74,7 @@ Then, let's constrcut and use the *CU<sub>s<sub>* operator in different scenario
     IN  = QuantumRegister( len(inputs), name = 'input'  )
     OUT = QuantumRegister( 1, name = 'output' )
     qc = QuantumCircuit(IN, OUT)
-    qc = CUs(qc, inputs, output, barriers=True)
+    qc = CUs(qc, inputs, output, barriers=True)     # Grover controlled-diffuser (CUs)
     qc.draw(output='mpl', style='bw', scale=1.0, fold=-1);
     ```    
     ![figure1](https://github.com/user-attachments/assets/eee0c473-892c-4241-b080-4f856c20f527)
@@ -85,7 +89,7 @@ Then, let's constrcut and use the *CU<sub>s<sub>* operator in different scenario
     qc = QuantumCircuit(IN, OUT, MEAS)
     qc.h(inputs)
     qc.mcx(inputs, output)   # The Boolean oracle
-    qc = CUs(qc, inputs, output, barriers=True)
+    qc = CUs(qc, inputs, output, barriers=True)     # Grover controlled-diffuser (CUs)
     qc.measure(inputs, list(range(len(inputs))))
     qc.draw(output='mpl', style='bw', scale=1.0, fold=-1);
     simulator = AerSimulator()
@@ -96,7 +100,7 @@ Then, let's constrcut and use the *CU<sub>s<sub>* operator in different scenario
     ![figure2a](https://github.com/user-attachments/assets/6d888a94-82ca-4a93-beb7-631954c859cc)
     ![figure2b](https://github.com/user-attachments/assets/8af11ffb-0a00-42dd-8361-149c9ff907c7)
 
-3. Construct Grover's algorithm for an arbitrary Boolean oracle in POS structure as ((a ? b ? ¬c) ? (¬a ? c) ? (¬b ? c)) using the *CU<sub>s<sub>* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions. **Note that such a Boolean oracle in POS structure is not solvable using the standard Grover diffuser (*U<sub>s<sub>*)!**
+3. Construct Grover's algorithm for an arbitrary Boolean oracle in POS structure, as (a + b + ¬c)(¬a + c)(¬b + c), using the *CU<sub>s<sub>* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions. **Note that such a Boolean oracle in POS structure is not solvable using the standard Grover diffuser (*U<sub>s<sub>*)!**
     ```python
     inputs = [0,1,2]
     ancillae = [3,4,5]
@@ -125,7 +129,7 @@ Then, let's constrcut and use the *CU<sub>s<sub>* operator in different scenario
     qc.x([0,1])
     qc.mcx([0,1,2],3)
     qc.x([0,1,3])
-    qc = CUs(qc, inputs, output, barriers=True)
+    qc = CUs(qc, inputs, output, barriers=True)     # Grover controlled-diffuser (CUs)
     qc.measure(inputs, list(range(len(inputs))))
     qc.draw(output='mpl', style='bw', scale=1.0, fold=-1);
     simulator = AerSimulator()
