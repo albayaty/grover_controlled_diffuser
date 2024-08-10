@@ -62,7 +62,7 @@ Finally, the `CUs` function returns the quantum circuit of Grover's algorithm wi
 
 ## Examples
 
-Initially, let's import the required Python and Qiskit libraries:
+Initially, import the required Python and Qiskit libraries:
 ```python
 from qiskit import *
 from qiskit_aer import AerSimulator
