@@ -15,7 +15,7 @@ def CUs(quantum_circuit, inputs, output, barriers=False):
     quantum_circuit: the quantum circuit of Grover's algorithm,
     inputs: the list of input qubits' indices of a Boolean oracle,
     output: the index of functional qubit (fqubit) of a Boolean oracle, and
-    barriers: draw barriers (separators) around the CUs operator.
+    barriers: draw barriers (separators) around the CUs operator, its default value is False.
     
     Returns
     -------
