@@ -1,7 +1,5 @@
 # Grover controlled-diffuser (*CU<sub>s<sub>*)
 
----
-
 The Grover controlled-diffuser (*CU<sub>s<sub>*) is a quantum diffusion operator for Grover’s algorithm that searches for all solutions for Boolean oracles only, since the standard Grover diffuser (*U<sub>s<sub>*) fails to find correct solutions for Boolean oracles in some logical structures! The *CU<sub>s<sub>* operator relies on the states of the output qubit (as the reflection of Boolean decisions from a Boolean oracle), without relying on the phase kickback. Thereby, the *CU<sub>s<sub>* operator successfully searches for all solutions for Boolean oracles regardless of their logical structures, e.g., POS, SOP, DSOP, ESOP, ANF (Reed-Muller), XOR SAT (CNF-XOR SAT and DNF-XOR SAT), just to name a few. Therefore, the *CU<sub>s<sub>* operator can replace the standard *U<sub>s<sub>* operator for Grover’s algorithm of Boolean oracles representing practical applications in the topics of digital synthesizers, robotics, computer vision, machine learning, etc., in the quantum domain.
 
 For more information, please check our paper entitled **"A concept of controlling Grover diffusion operator: A new approach to solve arbitrary Boolean-based problems"**, available at https://doi.org/10.21203/rs.3.rs-2997276/v1
