@@ -10,7 +10,7 @@ setup(
     author_email = 'albayaty@pdx.edu',
     url = 'https://github.com/albayaty/',
     download_url = 'https://github.com/albayaty/grover_controlled_diffuser/',
-    keywords = ['quantum computing', 'quantum algorithm', 'Grover\'s algorithm', 'diffusion operator'],
+    keywords = ['quantum computing', 'quantum algorithm', 'Grover algorithm', 'Grover diffusion operator'],
     classifiers = [
 		'Development Status :: 5 - Production/Stable',
 		'Intended Audience :: Science/Research',
