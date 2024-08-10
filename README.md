@@ -29,7 +29,7 @@ Instead, the *CU<sub>s<sub>* operator can be manually installed as stated in the
     Or, using this command:
 
     ```bash
-    python3 -m pip install -e setup.py
+    python3 -m pip install -e .
     ```
 
 ## Usage
