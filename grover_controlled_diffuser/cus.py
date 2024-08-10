@@ -21,7 +21,7 @@ def CUs(quantum_circuit, inputs, output, barriers=False):
     -------
     The quantum circuit of Grover's algorithm with the Grover controlled-diffuser (CUs).
     
-    For more information, please check our paper available at
+    For more information, please read our paper available at
     https://doi.org/10.21203/rs.3.rs-2997276/v1
     """
     
