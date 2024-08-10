@@ -6,7 +6,7 @@ Thereby, the *CU<sub>s<sub>* operator successfully searches for all solutions fo
 
 Therefore, the *CU<sub>s<sub>* operator can replace the standard *U<sub>s<sub>* operator for Grover’s algorithm of Boolean oracles representing practical applications in the topics of digital synthesizers, robotics, computer vision, machine learning, etc., in the quantum domain.
 
-For more information, please check our paper entitled **"A concept of controlling Grover diffusion operator: A new approach to solve arbitrary Boolean-based problems"**, available at https://doi.org/10.21203/rs.3.rs-2997276/v1
+For more information, please read our paper entitled **"A concept of controlling Grover diffusion operator: A new approach to solve arbitrary Boolean-based problems"**, available at https://doi.org/10.21203/rs.3.rs-2997276/v1
 
 ## Installation
 
@@ -62,11 +62,12 @@ Finally, the `CUs` function returns the quantum circuit of Grover's algorithm wi
 
 ## Examples
 
-Initially, import the required Python and Qiskit libraries:
+Initially, import the required Python and Qiskit libraries (including our `grover_controlled_diffuser`):
 ```python
 from qiskit import *
 from qiskit_aer import AerSimulator
 from qiskit.visualization import *
+from grover_controlled_diffuser import *
 import matplotlib.pyplot as plt
 %matplotlib inline
 ```
@@ -148,7 +149,7 @@ Then, let's construct and use the *CU<sub>s<sub>* operator in different scenario
 
 ## Reference
 
-In case you are utilizing our Grover controlled-diffuser (*CU<sub>s<sub>*) in your research work, we would be thankful if you referred to it by citing our publication:
+In case you are utilizing our Grover controlled-diffuser (*CU<sub>s<sub>*) in your research work, we would be grateful if you cited our publication:
 
 A. Al-Bayaty and M. Perkowski, "A concept of controlling Grover diffusion operator: A new approach to solve arbitrary Boolean-based problems," 2023, [Online]. Available: https://doi.org/10.21203/rs.3.rs-2997276/v1
 
