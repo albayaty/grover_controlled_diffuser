@@ -74,10 +74,11 @@ Then, let's constrcut and use the *CU<sub>s<sub>* operator in different scenario
     qc = QuantumCircuit(IN, OUT)
     qc = CUs(qc, inputs, output, barriers=True)
     qc.draw(output='mpl', style='bw', scale=1.0, fold=-1);
-    ```
-    ![figure1](/images/figure1)
+    ```    
+    ![figure1](https://github.com/user-attachments/assets/eee0c473-892c-4241-b080-4f856c20f527)
 
-2. Construct Grover's algorithm for a 4-bit Toffoli gate (as a Boolean oracle) using the *CU<sub>s<sub>* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions:
+
+3. Construct Grover's algorithm for a 4-bit Toffoli gate (as a Boolean oracle) using the *CU<sub>s<sub>* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions:
     ```python
     inputs = [0,1,2]
     output = 3
@@ -98,7 +99,7 @@ Then, let's constrcut and use the *CU<sub>s<sub>* operator in different scenario
     ![figure2a](/images/figure2a)
     ![figure2b](/images/figure2b)
 
-3. Construct Grover's algorithm for an arbitrary Boolean oracle in POS structure as ((a ? b ? ¬c) ? (¬a ? c) ? (¬b ? c)) using the *CU<sub>s<sub>* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions. **Note that such a Boolean oracle in POS structure is not solvable using the standard Grover diffuser (*U<sub>s<sub>*)!**
+4. Construct Grover's algorithm for an arbitrary Boolean oracle in POS structure as ((a ? b ? ¬c) ? (¬a ? c) ? (¬b ? c)) using the *CU<sub>s<sub>* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions. **Note that such a Boolean oracle in POS structure is not solvable using the standard Grover diffuser (*U<sub>s<sub>*)!**
     ```python
     inputs = [0,1,2]
     ancillae = [3,4,5]
