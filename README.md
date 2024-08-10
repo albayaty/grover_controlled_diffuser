@@ -56,7 +56,7 @@ Where,
 
 `output`: the index of output qubit of a Boolean oracle, and
 
-`barriers`: draw barriers (separators) around the *CU<sub>s<sub>* operator.
+`barriers`: draw barriers (separators) around the *CU<sub>s<sub>* operator, its default value is `False`.
     
 Finally, the `CUs` function returns the quantum circuit of Grover's algorithm with the constructed *CU<sub>s<sub>* operator. Note that this function does not add the measurement gates.
 
