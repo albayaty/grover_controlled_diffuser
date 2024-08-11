@@ -36,7 +36,7 @@ Instead, the *CU<sub>s<sub>* operator can be manually installed as stated in the
 
 First of all, please be sure that the following prerequisite packages have been installed:
 
-- `qiskit` >= 1.0.
+- `qiskit` (version >= 1.0).
 - `qiskit_aer` (simulating quantum circuits locally).
 - `qiskit_ibm_runtime` (transpiling and executing quantum circuits on IBM quantum computers).
 - `qiskit.visualization` (plotting histograms, distributions, etc.).
