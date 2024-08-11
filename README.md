@@ -107,7 +107,7 @@ Then, let's construct and use the *CU<sub>s<sub>* operator in different scenario
     ![figure2a](https://github.com/user-attachments/assets/6d888a94-82ca-4a93-beb7-631954c859cc)
     ![figure2b](https://github.com/user-attachments/assets/8af11ffb-0a00-42dd-8361-149c9ff907c7)
 
-3. Construct Grover's algorithm to solve an arbitrary Boolean oracle in POS structure, as (a + b + ¬c)(¬a + c)(¬b + c), using the *CU<sub>s<sub>* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions. **Note that such a Boolean oracle in POS structure is not solvable using the standard Grover diffuser (*U<sub>s<sub>*)!**
+3. Construct Grover's algorithm to solve an arbitrary Boolean oracle in POS structure, as (*a* + *b* + ¬*c*)(¬*a* + *c*)(¬*b* + *c*), using the *CU<sub>s<sub>* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions. **Note that such a Boolean oracle in POS structure is not solvable using the standard Grover diffuser (*U<sub>s<sub>*)!**
     ```python
     inputs = [0,1,2]
     ancillae = [3,4,5]
