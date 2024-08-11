@@ -6,7 +6,7 @@ Thereby, the *CU<sub>s<sub>* operator successfully searches for all solutions fo
 
 Therefore, the *CU<sub>s<sub>* operator can replace the standard *U<sub>s<sub>* operator for Grover’s algorithm of Boolean oracles representing practical applications in the topics of digital synthesizers, robotics, computer vision, machine learning, etc., in the quantum domain.
 
-For more information, please read our paper entitled **"A concept of controlling Grover diffusion operator: A new approach to solve arbitrary Boolean-based problems"**, available at https://doi.org/10.21203/rs.3.rs-2997276/v1
+For more information, please read our paper entitled **"A Concept of Controlling Grover Diffusion Operator: A New Approach to Solve Arbitrary Boolean-Based Problems"**, available at https://doi.org/10.21203/rs.3.rs-2997276/v1
 
 ## Installation
 
