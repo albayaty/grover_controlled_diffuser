@@ -87,7 +87,7 @@ Then, let's construct and use the *CU<sub>s<sub>* operator in different scenario
     qc = CUs(qc, inputs, output, barriers=True)     # Grover controlled-diffuser (CUs)
     qc.draw(output='mpl', style='bw', scale=1.0, fold=-1);
     ```    
-    ![figure1](https://github.com/user-attachments/assets/eee0c473-892c-4241-b080-4f856c20f527)
+    ![figure1](images/figure1.png)
 
 2. Construct Grover's algorithm to solve a 4-bit Toffoli gate (as a Boolean oracle) using the *CU<sub>s<sub>* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions:
     ```python
@@ -107,8 +107,8 @@ Then, let's construct and use the *CU<sub>s<sub>* operator in different scenario
     counts  = results.get_counts(0)
     plot_distribution(counts, bar_labels=True, title="One solution is found when all inputs are in the |1? states");
     ```
-    ![figure2a](https://github.com/user-attachments/assets/6d888a94-82ca-4a93-beb7-631954c859cc)
-    ![figure2b](https://github.com/user-attachments/assets/8af11ffb-0a00-42dd-8361-149c9ff907c7)
+    ![figure2a](images/figure2a.png)
+    ![figure2b](images/figure2b.png)
 
 3. Construct Grover's algorithm to solve an arbitrary Boolean oracle in POS structure, as (*a* + *b* + ¬*c*)(¬*a* + *c*)(¬*b* + *c*), using the *CU<sub>s<sub>* operator, in one Grover iteration (loop), and then measure the outcomes as the highest probabilities as solutions. **Note that such a Boolean oracle in POS structure is not solvable using the standard Grover diffuser (*U<sub>s<sub>*)!**
     ```python
@@ -147,8 +147,8 @@ Then, let's construct and use the *CU<sub>s<sub>* operator in different scenario
     counts  = results.get_counts(0)
     plot_distribution(counts, bar_labels=True, title="Solutions");
     ```
-    ![figure3a](https://github.com/user-attachments/assets/47d6971d-7f84-48a7-a015-5f29cf8f2eeb)
-    ![figure3b](https://github.com/user-attachments/assets/79d30159-fad3-414a-aef0-6f73817641b2)
+    ![figure3a](images/figure3a.png)
+    ![figure3b](images/figure3b.png)
 
 ## Reference
 
