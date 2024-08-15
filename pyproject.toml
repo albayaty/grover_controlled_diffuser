@@ -6,8 +6,8 @@ build-backend = "setuptools.build_meta"
 name = "grover_controlled_diffuser"
 description = "Grover controlled-diffuser (CUs)"
 version = "1.1"
-readme = "README.md"
-license = {file = "LICENSE"}
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE" }
 authors = [
     {name = "Ali Al-Bayaty", email = "albayaty@pdx.edu"},
 ]
@@ -28,8 +28,7 @@ classifiers = [
 	"Topic :: Scientific/Engineering",
 ]
 requires-python = ">=3.9"
-# Check the `tool.setuptools.dynamic` table.
-dynamic = ["version", "readme", "dependencies"]
+dependencies = {file = "requirements.txt" }
 
 [project.urls]
 Homepage = "https://github.com/albayaty"
@@ -37,11 +36,6 @@ Repository = "https://github.com/albayaty/grover_controlled_diffuser"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-
-[tool.setuptools.dynamic]
-version = { file = "src/VERSION.txt" }
-readme = { file = "README.md", content-type = "text/markdown" }
-dependencies = {file = "requirements.txt" }
 
 [tool.pytest.ini_options]
 minversion = "7.0"
