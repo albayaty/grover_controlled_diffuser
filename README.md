@@ -111,7 +111,7 @@ Then, let's construct and use the *CU<sub>s<sub>* operator in different scenario
     simulator = AerSimulator()
     results = simulator.run(qc).result()
     counts  = results.get_counts(0)
-    plot_distribution(counts, bar_labels=True, title="One solution is found when all inputs are in the |1? states");
+    plot_distribution(counts, bar_labels=True, title="One solution is found when all inputs are in the |1> states");
     ```
     ![figure2a](images/figure2a.png)
     ![figure2b](images/figure2b.png)
