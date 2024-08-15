@@ -28,7 +28,7 @@ classifiers = [
 	"Topic :: Scientific/Engineering",
 ]
 requires-python = ">=3.9"
-# Check the `tool.setuptools.dynamic` table.
+# Check the `tool.setuptools.dynamic` table:
 dynamic = ["dependencies"]
 
 [project.urls]
