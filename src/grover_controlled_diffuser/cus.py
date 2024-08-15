@@ -55,13 +55,13 @@ def CUs(quantum_circuit, inputs, output, barriers=False):
 # Counting the number of gates of the CUs operator:
 # ----------------------------------------------------------------------
 
-def num_CUs_gates(qubits):
+def num_CUs_gates(n):
     """
     This function counts the number of gates of Grover controlled-diffuser (CUs).
     
     Parameters
     ----------
-    qubits: the number of qubits (n-1 inputs and 1 output), where qubits >= 3.
+    n: the number of qubits (n-1 inputs and 1 output), where n >= 3.
     
     Returns
     -------
@@ -70,12 +70,12 @@ def num_CUs_gates(qubits):
     
     # Consistency checking:    
     if (qubits < 3):
-	    print(f"\n⟩⟩⟩ ERROR: The CUs operator should have more than {qubits} qubits!")
+	    print(f"\n⟩⟩⟩ ERROR: The CUs operator should have more than {n} qubits!")
 	    print(f"⟩⟩⟩  INFO: The CUs operator has n qubits (n-1 inputs + 1 output), where n >= 3.\n")
 	    return
     
-    H = qubits*2
-    X = qubits*2
+    H = n*2
+    X = n*2
     MCX = 1    
     gates = H + X + MCX
     
