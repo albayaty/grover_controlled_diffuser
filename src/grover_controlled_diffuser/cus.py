@@ -69,7 +69,7 @@ def num_CUs_gates(n):
     """
     
     # Consistency checking:    
-    if (qubits < 3):
+    if (n < 3):
 	    print(f"\n⟩⟩⟩ ERROR: The CUs operator should have more than {n} qubits!")
 	    print(f"⟩⟩⟩  INFO: The CUs operator has n qubits (n-1 inputs + 1 output), where n >= 3.\n")
 	    return
