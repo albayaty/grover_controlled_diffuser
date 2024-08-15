@@ -28,7 +28,8 @@ classifiers = [
 	"Topic :: Scientific/Engineering",
 ]
 requires-python = ">=3.9"
-dependencies = { file = "requirements.txt" }
+# Check the `tool.setuptools.dynamic` table.
+dynamic = ["dependencies"]
 
 [project.urls]
 Homepage = "https://github.com/albayaty"
@@ -36,6 +37,9 @@ Repository = "https://github.com/albayaty/grover_controlled_diffuser"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt" }
 
 [tool.pytest.ini_options]
 minversion = "7.0"
