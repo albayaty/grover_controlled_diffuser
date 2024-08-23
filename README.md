@@ -1,11 +1,11 @@
 # Grover controlled-diffuser (*CU<sub>s<sub>*)
 
 [![Tests](https://github.com/albayaty/grover_controlled_diffuser/actions/workflows/tests.yml/badge.svg)](https://github.com/albayaty/grover_controlled_diffuser/actions/workflows/tests.yml)
-![Jupyter](https://img.shields.io/badge/Jupyter-notebook-brightgreen)
-![Python](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)
-![Platform](https://img.shields.io/badge/platform-macos%20%7C%20ubuntu%20%7C%20windows-blue)
-![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
-![Qiskit](https://img.shields.io/badge/IBM_Qiskit-6929C4?logo=qiskit&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-notebook-brightgreen?logo=jupyter&color=blue)
+![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue?logo=python)
+![Qiskit](https://img.shields.io/badge/Qiskit%20-%20%3E%3D%201.0%20-%20%236133BD?logo=qiskit&color=blue)
+![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux%20%7C%20Windows-blue)
+![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?color=blue)
 
 The Grover controlled-diffuser (*CU<sub>s<sub>*) is a quantum diffusion operator for Grover’s algorithm that searches for all solutions for Boolean oracles only, since the standard Grover diffuser (*U<sub>s<sub>*) fails to find correct solutions for Boolean oracles in some logical structures! The *CU<sub>s<sub>* operator relies on the states of the output qubit (as the reflection of Boolean decisions from a Boolean oracle), without relying on the phase kickback as illustrated below.
 
