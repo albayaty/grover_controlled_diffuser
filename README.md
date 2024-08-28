@@ -6,7 +6,7 @@
 [![Qiskit](https://img.shields.io/badge/Qiskit-%E2%89%A5%201.0-blue.svg?logo=qiskit)](https://www.ibm.com/quantum/qiskit)
 [![Ecosystem](https://img.shields.io/badge/Qiskit-ecosystem-blue.svg?logo=qiskit)](https://www.ibm.com/quantum/ecosystem)
 ![Platforms](https://img.shields.io/badge/Platforms-Linux%20%7C%20macOS%20%7C%20Windows-blue)
-[![License](https://img.shields.io/github/license/albayaty/grover_controlled_diffuser?label=License)](https://www.apache.org/licenses/LICENSE-2.0)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue)](https://www.apache.org/licenses/LICENSE-2.0)
 
 The Grover controlled-diffuser (*CU<sub>s<sub>*) is a quantum diffusion operator for Grover’s algorithm that searches for all solutions for Boolean oracles only, since the standard Grover diffuser (*U<sub>s<sub>*) fails to find correct solutions for Boolean oracles in some logical structures! The *CU<sub>s<sub>* operator relies on the states of the output qubit (as the reflection of Boolean decisions from a Boolean oracle), without relying on the phase kickback as illustrated below.
 
