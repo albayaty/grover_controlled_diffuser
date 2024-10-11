@@ -174,6 +174,6 @@ Or, using BibTeX style:
     volume={14},
     pages={23570},
     year={2024},
-    publisher={Nature}
+    publisher={Nature Publishing Group}
 }
 ```
