@@ -16,7 +16,7 @@ Thereby, the *CU<sub>s<sub>* operator successfully searches for all solutions fo
 
 Therefore, the *CU<sub>s<sub>* operator can replace the standard *U<sub>s<sub>* operator for Grover’s algorithm of Boolean oracles representing practical applications in the topics of digital synthesizers, robotics, computer vision, machine learning, etc., in the quantum domain.
 
-For more information, please read our paper entitled **"A concept of controlling Grover diffusion operator: a new approach to solve arbitrary Boolean-based problems"**, available at https://doi.org/10.1038/s41598-024-74587-y
+For more information, please read our paper entitled **"A concept of controlling Grover diffusion operator: A new approach to solve arbitrary Boolean-based problems"**, available at https://doi.org/10.1038/s41598-024-74587-y
 
 ## Installation
 
@@ -161,7 +161,7 @@ Then, let's construct and use the *CU<sub>s<sub>* operator in different scenario
 
 In case you are utilizing our Grover controlled-diffuser (*CU<sub>s<sub>*) in your research work, we would be grateful if you cited our publication:
 
-A. Al-Bayaty and M. Perkowski, "A concept of controlling Grover diffusion operator: a new approach to solve arbitrary Boolean-based problems," *Scientific Reports*, vol. 14, p. 23570, 2024. [Online]. Available: https://doi.org/10.1038/s41598-024-74587-y
+A. Al-Bayaty and M. Perkowski, "A concept of controlling Grover diffusion operator: A new approach to solve arbitrary Boolean-based problems," *Scientific Reports*, vol. 14, pp. 1-16, 2024. [Online]. Available: https://doi.org/10.1038/s41598-024-74587-y
 
 Or, using BibTeX style:
 
@@ -172,7 +172,7 @@ Or, using BibTeX style:
     journal={Scientific Reports},
     note={Grover controlled-diffuser is available at \url{https://doi.org/10.1038/s41598-024-74587-y}},
     volume={14},
-    pages={23570},
+    pages={1-16},
     year={2024},
     publisher={Nature Publishing Group}
 }
