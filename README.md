@@ -170,10 +170,10 @@ Or, using BibTeX style:
     title={A concept of controlling Grover diffusion operator: a new approach to solve arbitrary Boolean-based problems},
     author={Al-Bayaty, Ali and Perkowski, Marek},
     journal={Scientific Reports},
-    note={Grover controlled-diffuser is available at \url{https://doi.org/10.1038/s41598-024-74587-y}},
     volume={14},
     pages={1-16},
     year={2024},
-    publisher={Nature Publishing Group}
+    publisher={Nature Publishing Group},
+    url={https://doi.org/10.1038/s41598-024-74587-y}
 }
 ```
