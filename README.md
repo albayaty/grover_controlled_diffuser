@@ -168,7 +168,7 @@ Or, using BibTeX style:
 ```bibtex
 @article{grovercontrolleddiffuser,
     title={A concept of controlling Grover diffusion operator: a new approach to solve arbitrary Boolean-based problems},
-    author={Al-Bayaty, Ali and Perkowski, Marek},
+    author={Ali Al-Bayaty and Marek Perkowski},
     journal={Scientific Reports},
     volume={14},
     pages={1-16},
